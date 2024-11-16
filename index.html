@@ -73,6 +73,32 @@
         .card-text {
             color: #6c5b5b; /* Subtle Brown */
         }
+        .categories {
+            background: #fff7e6; /* Light beige background */
+            padding: 20px 5px;
+            display: flex;
+            justify-content: space-between;
+            direction: ltr;
+            align-items: center;
+            gap: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap;
+        }
+        .categories a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff7744;
+            background: #fff;
+            border: 2px solid #ff7744;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        .categories a:hover {
+            background: #ff7744;
+            color: #fff;
+        }
 
         /* Footer */
         footer {
@@ -101,7 +127,14 @@
         <img src="Beige and Brown Retro Bread Bakery Shop Logo.png" alt="Logo" class="logo">
         <h2>نانپێژیا رۆژ</h2>
     </nav>
-
+    <section class="categories">
+        <a href="#sada">Bread</a>
+        <a href="#panir">Cakes</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#specials">Specials</a>
+    </section>
     <!-- Carousel Section -->
     <div class="container mt-4">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -250,7 +283,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" id="panir">
                 <div class="card">
                     <img src="panir.JPG" class="card-img-top" alt="Product">
                     <div class="card-body">
